@@ -33,25 +33,25 @@ public class HelloMethoden : MonoBehaviour
 
         //at 4)
         Debug.Log("before startValue4:" + startValue4);
-        DecrementByOne(startValue4);
+        OutputDecrementedValue(startValue4);
         Debug.Log("after startValue4:" + startValue4);
 
         //at 5)
         Debug.Log("before startValue5:" + startValue5);
-        startValue5 = DecrementByX(startValue5, 2);
+        startValue5 = GetDiffrence(startValue5, 2);
         Debug.Log("before startValue5:" + startValue5);
     }
     
 
     //5) incl. return value 
-    private int DecrementByX(int start, int valToSub)
+    private int GetDiffrence(int a, int b)
     {
-        return start - valToSub;
+        return a - b;
 
     }
 
     //at 4)
-    private void DecrementByOne(int val)
+    private void OutputDecrementedValue(int val)
     {
         val--;
         Debug.Log("val:" + val);
@@ -68,7 +68,6 @@ public class HelloMethoden : MonoBehaviour
     private void IncrementByOne()
     {
         startValue2++;
-        //startValue = startValue + 1;
 
     }
 
