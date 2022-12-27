@@ -64,7 +64,7 @@ public class HelloOperatoren : MonoBehaviour
 
         if (a & b)
         {
-                    Debug.Log("a&b = true");
+            Debug.Log("a&b = true");
         }
 
         if (a | b)
